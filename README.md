@@ -12,7 +12,7 @@ Recommended setup:
    should have the amp's MAC address set up to receive a fixed IP address so you
    don't need to keep changing the address in this tool.
  - See notes below about EU market limitations and recommended power settings in
-   the amp's formware.
+   the amp's firmware.
 
 The general gist of Rotel's command language:
 
