@@ -1,3 +1,9 @@
+QUICK START:
+ - edit the 'Rotel_A14_mkii_fw_3_08.json' file in the 'configs' directory to
+   reflect your amp's IP address
+ - Add any missing Python modules (or create a new virtual environment to
+   work in). I think 'tkinter' would be the only missing library, but YMMV.
+
 Notes:
 
 This entire rotelremote project was put together rather quickly as a proof of
