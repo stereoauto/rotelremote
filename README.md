@@ -3,6 +3,7 @@ QUICK START:
    reflect your amp's IP address
  - Add any missing Python modules (or create a new virtual environment to
    work in). I think 'tkinter' would be the only missing library, but YMMV.
+ - Run the GUI using 'python3 rotelRemote.pyw'
 
 Notes:
 
