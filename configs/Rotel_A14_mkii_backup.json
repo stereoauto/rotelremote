@@ -1,0 +1,40 @@
+{
+  "port": 9596,
+  "address": "",
+  "name": "Rotel A14 mkII",
+  "timeout": 5,
+  "volume_min": 0,
+  "volume_max": 96,
+  "sources": {
+    "cd": { "id": "cd", "label": "CD", "visible": true },
+    "coax1": { "id": "coax1", "label": "COAX 1", "visible": true },
+    "coax2": { "id": "coax2", "label": "COAX 2", "visible": true },
+    "opt1": { "id": "opt1", "label": "Optical 1", "visible": true },
+    "opt2": { "id": "opt2", "label": "Optical 2", "visible": true },
+    "aux1": { "id": "aux1", "label": "AUX 1", "visible": true },
+    "aux2": { "id": "aux2", "label": "AUX 2", "visible": true },
+    "tuner": { "id": "tuner", "label": "Tuner", "visible": true },
+    "phono": { "id": "phono", "label": "Phono", "visible": true },
+    "usb": { "id": "usb", "label": "Front USB", "visible": true },
+    "bluetooth": { "id": "bluetooth", "label": "Bluetooth", "visible": true },
+    "pcusb": { "id": "pcusb", "label": "PC USB", "visible": true }
+},
+  "commands": {
+    "power_on": "amp:power_on!",
+    "power_off": "amp:power_off!",
+    "power_toggle": "amp:power_toggle!",
+    "volume_up": "amp:vol_up!",
+    "volume_down": "amp:vol_down!",
+    "volume_set": "amp:vol_#!",
+    "mute_toggle": "amp:mute!",
+    "mute_on": "amp:mute_on!",
+    "mute_off": "amp:mute_off!"
+  },
+  "queries": {
+    "power": "amp:power?",
+    "source": "amp:source?",
+    "volume": "amp:volume?",
+    "mute": "amp:mute?",
+    "frequency": "amp:freq?"
+  }
+}

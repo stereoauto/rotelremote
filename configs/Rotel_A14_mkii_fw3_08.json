@@ -1,0 +1,92 @@
+
+{
+    "port": 9596,
+    "address": "192.168.50.202",
+    "name": "Rotel A14 mkII fw3_08",
+    "timeout": 0.25,
+    "volume_min": 0,
+    "volume_max": 96,
+    "tone_min": -10,
+    "tone_max": 10,
+    "balance_min": -15,
+    "balance_max": 15,
+    "sources": {
+        "cd": {
+            "label": "CD",
+            "visible": true
+        },
+        "coax1": {
+            "label": "COAX 1",
+            "visible": true
+        },
+        "coax2": {
+            "label": "COAX 2",
+            "visible": true
+        },
+        "opt1": {
+            "label": "Optical 1",
+            "visible": true
+        },
+        "opt2": {
+            "label": "Optical 2",
+            "visible": true
+        },
+        "aux1": {
+            "label": "AUX 1",
+            "visible": true
+        },
+        "aux2": {
+            "id": "aux2",
+            "label": "AUX 2",
+            "visible": true
+        },
+        "tuner": {
+            "label": "Tuner",
+            "visible": true
+        },
+        "phono": {
+            "label": "Phono",
+            "visible": true
+        },
+        "usb": {
+            "label": "Front USB",
+            "visible": true
+        },
+        "bluetooth": {
+            "label": "Bluetooth",
+            "visible": true
+        },
+        "pcusb": {
+            "label": "PC USB",
+            "visible": true
+        }
+    },
+    "commands": {
+        "power_on": "amp:power_on!",
+        "power_off": "amp:power_off!",
+        "power_toggle": "amp:power_toggle!",
+        "volume_up": "amp:vol_up!",
+        "volume_down": "amp:vol_down!",
+        "volume_set": "amp:vol_#!",
+        "mute_toggle": "amp:mute!",
+        "mute_on": "amp:mute_on!",
+        "mute_off": "amp:mute_off!",
+        "updatesoff": "rs232_update_off!",
+        "bypass_on": "amp:bypass_on!",
+        "bypass_off": "amp:bypass_off!",
+        "bass_set": "amp:bass_#!",
+        "treble_set": "amp:treble_#!",
+        "balance_set": "amp:balance_#!"
+    },
+    "queries": {
+        "power": "amp:power?",
+        "source": "amp:source?",
+        "volume": "amp:volume?",
+        "mute": "amp:mute?",
+        "bass": "amp:bass?",
+        "treble": "amp:treble?",
+        "balance": "amp:balance?",
+        "bypass": "amp:bypass?",
+        "frequency": "amp:freq?"
+    }
+}
