@@ -1,6 +1,6 @@
 Notes:
 
-This entire rotelRemote project was put together rather quickly as a proof of
+This entire rotelremote project was put together rather quickly as a proof of
 concept, its implementation of the Rotel protocol is not exhaustive and the GUI
 is not meant to be pretty or modern, it just needed to work.
 
@@ -8,7 +8,7 @@ This project lets you control a Rotel amp using a Python-based GUI running on a
 PC (pr any other Python-enabled device).
 
 Recommended setup:
- - the amp is accessed via an IPv4 address, so rour home network's DHCP server
+ - the amp is accessed via an IPv4 address, so your home network's DHCP server
    should have the amp's MAC address set up to receive a fixed IP address so you
    don't need to keep changing the address in this tool.
  - See notes below about EU market limitations and recommended power settings in
@@ -20,10 +20,10 @@ The general gist of Rotel's command language:
 an exclamation point, and can contain numeric values depending on the command.
 
 Command examples:
-  amp:cd! - switch to CD input
-  amp:vol_up! - turn the voilume up by 1
-  amp:vol_45! - set the volume to 45
-  amp:balance_R05! - set the balance to 'right, +5'
+  cd! - switch to CD input
+  vol_up! - turn the voilume up by 1
+  vol_45! - set the volume to 45
+  balance_R05! - set the balance to 'right, +5'
 
 The amplifier will respond to commands with the newly set value if it understood
 the command. It can also respond with other configuration values that are
@@ -35,9 +35,9 @@ followed by a question mark. The amp will respond with the item's name, an equal
 sign, and the value, followed by a dollar sign ($) to mark the end of the value.
 
 Query examples:
-  amp:source? - which source is active
-  amp:volume? - current volume setting
-  amp:bypass? - current tone bypass setting
+  source? - which source is active
+  volume? - current volume setting
+  bypass? - current tone bypass setting
 
 There are documents on Rotel's website that describe an earlier version of their
 IP protocol, but I found this was outdated for the v3.8 firmware on my A14 mkII.
